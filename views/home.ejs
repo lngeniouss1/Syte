@@ -1,0 +1,46 @@
+<%- include('partials/header', { title, activePage }) %>
+<section class="home-intro page-shell">
+  <div class="intro-copy">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> Идеи для путешествий</p>
+    <h1>Куда отправиться<br><span>дальше?</span></h1>
+  </div>
+  <p class="intro-note">Подборка интересных мест для отдыха и новых впечатлений.</p>
+</section>
+
+<section class="feature-slider page-shell" aria-label="Идеи для путешествий">
+  <div class="slides">
+    <article class="slide is-current" data-slide="0" aria-hidden="false">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85" alt="Снежные вершины гор на рассвете" fetchpriority="high">
+      <div class="slide-shade"></div>
+      <div class="slide-content"><span class="slide-kicker">Направление 1</span><h2>Отдых в горах</h2><p>Свежий воздух, красивые виды и прогулки по природе.</p><a href="/catalog" class="slide-link">Открыть каталог <span aria-hidden="true">↗</span></a></div>
+      <span class="slide-location">Горы</span>
+    </article>
+    <article class="slide" data-slide="1" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=2000&q=85" alt="Морские волны у песчаного побережья" loading="lazy">
+      <div class="slide-shade"></div>
+      <div class="slide-content"><span class="slide-kicker">Направление 2</span><h2>Поездка к морю</h2><p>Проведите несколько дней у воды и отдохните от города.</p><a href="/catalog" class="slide-link">Открыть каталог <span aria-hidden="true">↗</span></a></div>
+      <span class="slide-location">Море</span>
+    </article>
+    <article class="slide" data-slide="2" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85" alt="Домик у озера среди гор и леса" loading="lazy">
+      <div class="slide-shade"></div>
+      <div class="slide-content"><span class="slide-kicker">Направление 3</span><h2>Выходные за городом</h2><p>Небольшая поездка, чтобы сменить обстановку.</p><a href="/catalog" class="slide-link">Открыть каталог <span aria-hidden="true">↗</span></a></div>
+      <span class="slide-location">Загородный отдых</span>
+    </article>
+  </div>
+  <div class="slider-controls" aria-label="Управление слайдером">
+    <div class="slider-count"><span data-slide-current>01</span><span class="count-divider"></span><span>03</span></div>
+    <div class="slider-dots">
+      <button class="slider-dot is-current" type="button" aria-label="Слайд 1" aria-pressed="true" data-go-to="0"></button>
+      <button class="slider-dot" type="button" aria-label="Слайд 2" aria-pressed="false" data-go-to="1"></button>
+      <button class="slider-dot" type="button" aria-label="Слайд 3" aria-pressed="false" data-go-to="2"></button>
+    </div>
+    <div class="slider-arrows"><button type="button" data-previous aria-label="Предыдущий слайд">←</button><button type="button" data-next aria-label="Следующий слайд">→</button></div>
+  </div>
+</section>
+
+<section class="home-after page-shell">
+  <p>Выберите место для следующей поездки.</p>
+  <a class="text-link" href="/catalog">Перейти в каталог <span aria-hidden="true">↗</span></a>
+</section>
+<%- include('partials/footer') %>
