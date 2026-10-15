@@ -15,32 +15,16 @@
         <span class="brand-mark" aria-hidden="true">д.</span>
         <span class="brand-name">дальше<span>.</span></span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span>
-      </button>
       <nav class="main-nav" aria-label="Основная навигация">
         <a class="nav-link <%= activePage === 'home' ? 'is-active' : '' %>" href="/">Главная</a>
         <a class="nav-link <%= activePage === 'catalog' ? 'is-active' : '' %>" href="/catalog">Каталог</a>
         <a class="nav-link <%= activePage === 'contacts' ? 'is-active' : '' %>" href="/contacts">Контакты</a>
       </nav>
       <div class="header-actions">
-        <button class="button button-quiet" type="button" data-auth="login">Войти</button>
-        <button class="button button-dark" type="button" data-auth="register">Регистрация <span aria-hidden="true">↗</span></button>
+        <button class="button" type="button">Войти</button>
+        <button class="button button-dark" type="button">Регистрация</button>
       </div>
     </div>
   </header>
 
-  <dialog class="auth-dialog" aria-labelledby="auth-title">
-    <button class="dialog-close" type="button" aria-label="Закрыть">×</button>
-    <p class="eyebrow">Хорошо, что вы здесь</p>
-    <h2 id="auth-title">Войти</h2>
-    <p class="auth-note">Форма пока работает в демонстрационном режиме.</p>
-    <form class="auth-form">
-      <label class="register-name" hidden>Ваше имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться?"></label>
-      <label>Электронная почта<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
-      <label>Пароль<input type="password" name="password" autocomplete="current-password" placeholder="Не менее 8 символов" minlength="8" required></label>
-      <button class="button button-dark auth-submit" type="submit">Продолжить <span aria-hidden="true">↗</span></button>
-      <p class="form-feedback" aria-live="polite"></p>
-    </form>
-  </dialog>
   <main>
