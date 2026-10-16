@@ -2,7 +2,7 @@
   "name": "puteshestvie-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Адаптивный сайт-каталог путешествий на Express и EJS",
+  "description": "Универсальный шаблон магазина на Express и EJS",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
